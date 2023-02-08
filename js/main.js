@@ -62,7 +62,7 @@ function removeCartItem(event){
 // Quantity Changed
 function quantityChanged(event) {
     var input = event.target;
-    if (isNaN(input.value) || input.value <= 0){
+    if(isNaN(input.value) || input.value <= 0){
         input.value = 1;
     }
     updatetotal();
@@ -116,15 +116,15 @@ function updatetotal() {
         var cartBox = cartBoxes[i];
         var priceElement = cartBox.getElementsByClassName("cart-price")[0];
         var quantityElement = cartBox.getElementsByClassName("cart-quantity")[0];
-        var price = parseFloat(priceElement.innerText.replace("Ksh", ""));
+        var price = parseFloat(priceElement.innerText.replace("ksh", ""));
         var quantity = quantityElement.value;
         total = total + price * quantity;
-    }
+    
     // If price contain some cents value
-    total = Math.round(total * 100) / 100;
+    // total = Math.round(total * 100) / 100;
 
     document.getElementsByClassName("total-price")[0].innerText = "Ksh" + total;
-
+    }
 }
 
     
