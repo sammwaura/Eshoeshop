@@ -155,6 +155,9 @@ header{
 .shop{
     margin-top: 2rem;
 }
+.billing{
+    margin-top: 2rem;
+}
 /* shoe content */
 .shop-content{
     display: grid;
@@ -194,6 +197,10 @@ header{
 }
 .add-cart:hover{
     background: hsl(249, 32%, 17%);
+}
+/* billing */
+.billing-content{
+    display: block;
 }
 
 /* MOBILE QUERIES */

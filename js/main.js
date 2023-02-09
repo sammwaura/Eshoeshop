@@ -97,7 +97,10 @@ function addProductToCart(title, price, productImg){
                                     <input type="number" value="1" class="cart-quantity">
                                 </div>
                                 <!-- remove cart -->
-                                <i class='bx bxs-trash-alt cart-remove'></i>`;
+                                <i class='bx bxs-trash-alt cart-remove'></i>
+                                </div>
+
+                                 `;
     cartShopBox.innerHTML = cartBoxContent;
     cartItems.append(cartShopBox);
     cartShopBox
